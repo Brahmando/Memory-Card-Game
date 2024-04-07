@@ -1,0 +1,27 @@
+[
+    {
+        "image": "icons/apple.png",
+        "name": "apple"
+    },
+    {
+        "image": "icons/banana.png",
+        "name": "banana"
+    },
+    {
+        "image": "icons/grapes.png",
+        "name": "grapes"
+    },
+    {
+        "image": "icons/joker.png",
+        "name": "joker"
+    },
+    {
+        "image": "icons/mango.png",
+        "name": "mango"
+    },
+    {
+        "image": "icons/orange.png",
+        "name": "orange"
+    }
+    
+]

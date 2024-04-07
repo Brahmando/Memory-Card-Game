@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+}
+
+p{
+    text-align: center;
+    font-size: 30px;
+    font: bold;
+}
+
+
+.actions{
+    display: flex;
+    justify-content: center;
+}
+
+.actions button{
+    padding: 8px 16px;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+    
+    gap: 16px;
+    grid-template-columns: repeat(4,140px);
+    grid-template-rows: repeat(3, calc(140px/2*3));
+    perspective: 1000px;
+
+    
+}
+
+.container div{
+    
+        text-align: center;
+        font-size: 30px;
+        font: bold;
+    /* backface-visibility: hidden; */
+}
+
+.card{
+    height: calc(140px/2*3);
+    width: 140px;
+    border-radius: 10px;
+    background-color: rgb(216, 102, 102);
+    position:relative;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.card.flipped{
+    transform: rotateY(180deg);
+}
+
+.container p{
+    border: 2px solid white;
+}
+
+.front,
+.back{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 10px;
+    /* visibility: hidden; */
+    backface-visibility: hidden;
+
+}
+
+.front{
+border: 2px solid rgb(23, 202, 97);
+/* top:20px; */
+/* background-color: yellow; */
+/* z-index: 1; */
+transform: rotateY(180deg);
+
+
+}
+
+
+.card .back{
+    /* top:40px; */
+    border: 2px solid rgb(1, 45, 241);
+    background-color: rgb(2, 233, 250);
+    backface-visibility: hidden;
+    
+}
+
+.param{
+    height: 120px;
+    width: 120px;
+}
